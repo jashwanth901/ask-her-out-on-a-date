@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="A little question for Bhavya 💗">
+  <title>One little question for Bhavya 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal petal-one" aria-hidden="true">✿</div>
+  <div class="petal petal-two" aria-hidden="true">♡</div>
+  <div class="petal petal-three" aria-hidden="true">✿</div>
+  <main class="page-shell">
+    <div class="top-note"><span class="tiny-heart">♥</span> A LITTLE NOTE FOR YOU <span class="tiny-heart">♥</span></div>
+    <section class="card" aria-live="polite">
+      <div class="flower-row" aria-hidden="true"><span>✿</span><span>♡</span><span>✿</span></div>
+
+      <section id="question-screen">
+        <p class="eyebrow">Hey, Bhavya...</p>
+        <h1>I have a little<br><em>question for you.</em></h1>
+        <div class="heart-art" aria-hidden="true">
+          <span class="sparkle sparkle-left">✧</span>
+          <span class="big-heart">♥</span>
+          <span class="sparkle sparkle-right">✧</span>
+        </div>
+        <p class="question-copy">Would you let me take you<br class="desktop-break"> on a date? 🌷</p>
+        <p class="small-copy">No pressure — just a little hope from me to you.</p>
+
+        <div class="button-stage" id="button-stage">
+          <button class="button yes-button" id="yes-button" type="button">Yes! 💗</button>
+          <button class="button no-button" id="no-button" type="button">No 🙈</button>
+        </div>
+        <p class="tiny-hint" id="tiny-hint">Choose wisely... just kidding (kind of) ♡</p>
+      </section>
+
+      <section id="planner-screen" hidden>
+        <p class="eyebrow">You just made me smile</p>
+        <h1>It's a <em>date!</em> 💕</h1>
+        <p class="planner-copy">Pick a day and time that works for you, Bhavya.</p>
+        <form id="date-form">
+          <label for="date">What day works for you?</label>
+          <input id="date" name="date" type="date" required>
+          <label for="time">And what time?</label>
+          <input id="time" name="time" type="time" required>
+          <label for="place">Any place in mind? <span class="optional">(optional)</span></label>
+          <input id="place" name="place" type="text" maxlength="120" placeholder="Somewhere you’d like to go...">
+          <label for="note">A little note for me? <span class="optional">(optional)</span></label>
+          <textarea id="note" name="note" rows="2" maxlength="500" placeholder="Anything you want me to know 💌"></textarea>
+          <input type="hidden" name="invitee" value="Bhavya">
+          <input type="hidden" name="invitation" value="Date invitation accepted">
+          <button class="button submit-button" id="submit-button" type="submit">Send my date choice 💌</button>
+          <p class="privacy-note">Your choice will be sent as a private form response.</p>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+        <button class="text-button" id="back-button" type="button">← Back to the question</button>
+      </section>
+
+      <section id="success-screen" hidden>
+        <div class="success-heart" aria-hidden="true">💌</div>
+        <p class="eyebrow">Message delivered</p>
+        <h1>It's official.<br><em>See you soon!</em></h1>
+        <p class="success-copy">Your date choice has been sent. I’ll be in touch soon. 🌷</p>
+        <div class="success-flower" aria-hidden="true">✿　♡　✿</div>
+      </section>
+      <div class="card-footer"><span>made with a little courage</span><span>♡</span></div>
+    </section>
+    <p class="bottom-note">A tiny invitation, with a lot of heart.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

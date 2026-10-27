@@ -17,7 +17,7 @@ const form = document.getElementById("date-form");
 const formMessage = document.getElementById("form-message");
 const submitButton = document.getElementById("submit-button");
 const backButton = document.getElementById("back-button");
-const dateInput = document.getElementById("date");
+const dateInput = document.querySelector('input[name="date"]');
 
 let noCount = 0;
 let yesScale = 1;
@@ -27,7 +27,7 @@ function localDateString() {
   const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
   return local.toISOString().slice(0, 10);
 }
-dateInput.min = localDateString();
+
 
 function showPlanner() {
   questionScreen.hidden = true;
